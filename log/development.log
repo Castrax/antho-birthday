@@ -632,3 +632,119 @@ app/views/pages/home.html.erb:9:in `_app_views_pages_home_html_erb___17590146028
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
   ↳ db/seeds.rb:166
 [36m  Cloudinary Storage (171.8ms) [0m[32mUploaded file to key: iHXfEsjTQBNns7Q5qYbGrWDF (checksum: 6NRmDYQJy+y9MDI1Sd7hJw==)[0m
+Started GET "/" for ::1 at 2020-04-09 14:54:07 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar-cesars-home.html.erb (2.2ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mathilderobert/code/Castrax/antho-birthday/public/packs
+[Webpacker] Hash: 744554bd84277db50ac9
+Version: webpack 4.41.6
+Time: 1094ms
+Built at: 04/09/2020 2:54:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ef0284e22242163401ee.js    503 KiB  application  [emitted] [immutable]  application
+js/application-ef0284e22242163401ee.js.map    630 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ef0284e22242163401ee.js js/application-ef0284e22242163401ee.js.map
+[./app/javascript/packs/application.js] 165 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 5 hidden modules
+
+Completed 200 OK in 5075ms (Views: 5046.9ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/fonts/Pecita-webfont.woff2" for ::1 at 2020-04-09 14:54:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Pecita-webfont.woff2"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/categories/1" for ::1 at 2020-04-09 14:54:17 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-04-09 14:54:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.4ms)
+  Rendered shared/_navbar-cesars.html.erb (1.2ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 93.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-04-09 14:54:21 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GTFJBjSOxIRyarcT49A4ERTCPdCr8Qk8WQ/TK5+qFd6X2tECMOcIjk7fWeMDqa5rOF09yNQ4urf/+KpKlVV3FQ==", "user"=>{"email"=>"test@test.fr", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Se connecter"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.fr"], ["LIMIT", 1]]
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GTFJBjSOxIRyarcT49A4ERTCPdCr8Qk8WQ/TK5+qFd6X2tECMOcIjk7fWeMDqa5rOF09yNQ4urf/+KpKlVV3FQ==", "user"=>{"email"=>"test@test.fr", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Se connecter"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.4ms)
+  Rendered shared/_navbar-cesars.html.erb (0.6ms)
+  Rendered shared/_flashes.html.erb (0.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-04-09 14:54:23 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+bRRJqWU/rVLq0ks38tcqiFbxDbojYHRqii5eMtUaul3X8kiof0yv3cep9w/ssrQDcTELpdEMloM38AZwasIIg==", "user"=>{"email"=>"test@test.fr", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Se connecter"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.fr"], ["LIMIT", 1]]
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+bRRJqWU/rVLq0ks38tcqiFbxDbojYHRqii5eMtUaul3X8kiof0yv3cep9w/ssrQDcTELpdEMloM38AZwasIIg==", "user"=>{"email"=>"test@test.fr", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Se connecter"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navbar-cesars.html.erb (0.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 132ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
