@@ -1,0 +1,66 @@
+// Specific CSS for your home-page
+.home {
+  background-color: rgb(254, 222, 30);
+}
+
+svg {
+  height: 70vh;
+  flex: 2;
+}
+
+.nav-home {
+  float: right;
+  font-size: 1rem;
+  padding: 1.4rem 0.5rem;
+  color: $cesars-black;
+  text-transform: uppercase;
+}
+.nav-home:hover {
+  color: $cesars-black;
+  text-decoration: none;
+}
+
+.deco-home {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 1.5rem 2rem 1rem 1rem;
+}
+
+.logo-centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.logo-robix {
+  font-family: $robix-font;
+  display: inline-flex;
+  .x {
+    font-size: 1.5rem;
+    margin: 0 1rem 0 0.8rem ;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+.vote-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .btn-home {
+    color: $cesars-black;
+    padding: 0.3rem 0.4rem;
+    border: 1px solid;
+  }
+  .btn-home:hover {
+    color: $cesars-black;
+    text-decoration: none;
+  }
+}
+
+

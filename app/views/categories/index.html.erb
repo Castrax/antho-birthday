@@ -1,0 +1,21 @@
+<div class="main-index">
+  <div class="container">
+    <h1 class="category-title">Nominations Césars 2020</h1>
+    <div class="category-list">
+    <p class="index-explain">Tu as voté <%= @answer.count %> catégories sur <%= @categories.count %></p>
+      <ul>
+        <% @categories.each do |category| %>
+          <% if current_user.answers.where(category_id: category.id)[0]!= nil && current_user.answers.where(category_id: category.id)[0].category_id == category.id %>
+            <%= link_to category do %>
+              <li><i class="fas fa-check"></i><%= category.title %></li>
+            <% end %>
+          <% else %>
+            <%= link_to category do %>
+              <li><%= category.title %></li>
+            <% end %>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

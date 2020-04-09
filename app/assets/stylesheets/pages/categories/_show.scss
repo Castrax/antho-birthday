@@ -1,0 +1,115 @@
+body {
+  background-color: #050302;
+}
+
+.category-title {
+  color: #FEDE1E;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.points-title {
+  font-size: 1.25rem;
+  text-transform: none;
+  font-weight: 300;
+}
+
+.vote-button-show {
+  text-align: center;
+  padding: 0.5rem 5rem;
+  width: 100px;
+  margin: 0 auto;
+  background-color: #FEDE1E;
+  position: relative;
+  height: 3rem;
+  .vote-button-link {
+    padding: 0.7rem 4rem;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #050302;
+    text-transform: uppercase;
+  }
+}
+
+.show-explain {
+  color: #FEDE1E;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.index-button {
+  margin-top: 3rem;
+}
+
+.categories-list {
+  color: #050302;
+  margin-left: 0.5rem;
+  &:hover {
+    color: #050302;
+    text-decoration: none;
+  }
+}
+
+.fa-list {
+  color: #050302;
+}
+
+.results-category {
+  margin-bottom: 5rem;
+  background-color: white;
+  position: relative;
+  border-radius: 4px;
+  padding-bottom: 3rem;
+}
+
+.title-results-category {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid #050302;
+  padding: 0.5rem;
+}
+
+// Petits appareils (mobiles portrait)
+@media (min-width: 320px) and (max-width: 414px) {
+  .index-button {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+// Petits appareils (mobiles paysage)
+@media (min-width: 568px) {
+}
+
+// Moyens appareils (tablettes portrait)
+@media (min-width: 768px) and (max-width: 834px) {
+}
+
+// Moyens appareils (tablettes paysage)
+@media (min-width: 1024px) {
+}
+
+//Ordinateurs
+@media (min-width: 1200px) {
+}
+
+
+
+
+

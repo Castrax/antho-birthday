@@ -1,0 +1,634 @@
+Started GET "/" for ::1 at 2020-04-09 11:44:26 +0200
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "_cesars-2020_development" does not exist
+):
+  
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-09 11:46:45 +0200
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "_cesars-2020_development" does not exist
+):
+  
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (147.9ms)[0m  [1m[35mCREATE DATABASE "_cesars-2020_development" ENCODING = 'unicode'[0m
+  ↳ bin/rake:9
+  [1m[35m (53.6ms)[0m  [1m[35mCREATE DATABASE "_cesars-2020_test" ENCODING = 'unicode'[0m
+  ↳ bin/rake:9
+  [1m[35m (84.5ms)[0m  [1m[35mCREATE DATABASE "_antho-birthday_development" ENCODING = 'unicode'[0m
+  ↳ bin/rake:9
+  [1m[35m (71.7ms)[0m  [1m[35mCREATE DATABASE "_antho-birthday_test" ENCODING = 'unicode'[0m
+  ↳ bin/rake:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "_antho-birthday_development" ENCODING = 'unicode'[0m
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "_antho-birthday_test" ENCODING = 'unicode'[0m
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/bin/rake:23
+Started GET "/" for ::1 at 2020-04-09 14:01:56 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (30.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6563091139620527505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20200212132657)
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200212132657_devise_create_users.rb:5
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200212132657_devise_create_users.rb:39
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20200212132657_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200212132657"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCategories (20200212133410)
+  [1m[35m (4.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200212133410_create_categories.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200212133410"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateNominees (20200212134958)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "nominees" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200212134958_create_nominees.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200212134958"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateAnswers (20200212135050)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "answers" ("id" bigserial primary key, "category_id" bigint, "nominee_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_efa7e0159f"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+, CONSTRAINT "fk_rails_41c748d06b"
+FOREIGN KEY ("nominee_id")
+  REFERENCES "nominees" ("id")
+)[0m
+  ↳ db/migrate/20200212135050_create_answers.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_answers_on_category_id" ON "answers"  ("category_id")[0m
+  ↳ db/migrate/20200212135050_create_answers.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_answers_on_nominee_id" ON "answers"  ("nominee_id")[0m
+  ↳ db/migrate/20200212135050_create_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200212135050"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddReferencesToNominee (20200212135845)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "nominees" ADD "category_id" bigint[0m
+  ↳ db/migrate/20200212135845_add_references_to_nominee.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_nominees_on_category_id" ON "nominees"  ("category_id")[0m
+  ↳ db/migrate/20200212135845_add_references_to_nominee.rb:3
+  [1m[35m (4.3ms)[0m  [1m[35mALTER TABLE "nominees" ADD CONSTRAINT "fk_rails_3295d19bd4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+[0m
+  ↳ db/migrate/20200212135845_add_references_to_nominee.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200212135845"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddReferencesToAnswers (20200212152300)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "answers" ADD "user_id" bigint[0m
+  ↳ db/migrate/20200212152300_add_references_to_answers.rb:3
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX  "index_answers_on_user_id" ON "answers"  ("user_id")[0m
+  ↳ db/migrate/20200212152300_add_references_to_answers.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "answers" ADD CONSTRAINT "fk_rails_584be190c2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20200212152300_add_references_to_answers.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200212152300"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveStorageTables (20200213180702)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200213180702_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200213180702_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200213180702_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200213180702_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200213180702_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213180702"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddColumnsToNominees (20200213185131)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "nominees" ADD "real" character varying[0m
+  ↳ db/migrate/20200213185131_add_columns_to_nominees.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213185131"]]
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddColumnsToUsers (20200214090222)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "prenom" character varying[0m
+  ↳ db/migrate/20200214090222_add_columns_to_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "nom" character varying[0m
+  ↳ db/migrate/20200214090222_add_columns_to_users.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200214090222"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddColumnToCategories (20200216214930)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "categories" ADD "points" integer[0m
+  ↳ db/migrate/20200216214930_add_column_to_categories.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200216214930"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddColumnNominees (20200219161016)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "nominees" ADD "winner" boolean[0m
+  ↳ db/migrate/20200219161016_add_column_nominees.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200219161016"]]
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddStockToUsers (20200227111305)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "stock" integer[0m
+  ↳ db/migrate/20200227111305_add_stock_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200227111305"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddPointsToAnswers (20200227115715)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "answers" ADD "points_earned" integer[0m
+  ↳ db/migrate/20200227115715_add_points_to_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200227115715"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 12:02:16.663865"], ["updated_at", "2020-04-09 12:02:16.663865"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6563091139620527505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-04-09 14:02:28 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"categories", :id=>nil}, missing required keys: [:id]):
+     6:   </div>
+     7: </div>
+     8: <div class="vote-button">
+     9:   <%= link_to 'Vote now', category_path(@category), class: 'btn-home'  %>
+    10: </div>
+  
+app/views/pages/home.html.erb:9:in `_app_views_pages_home_html_erb___1759014602876089250_70244762681240'
+Started GET "/" for ::1 at 2020-04-09 14:02:43 +0200
+Processing by PagesController#home as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"categories", :id=>nil}, missing required keys: [:id]):
+     6:   </div>
+     7: </div>
+     8: <div class="vote-button">
+     9:   <%= link_to 'Vote now', category_path(@category), class: 'btn-home'  %>
+    10: </div>
+  
+app/views/pages/home.html.erb:9:in `_app_views_pages_home_html_erb___1759014602876089250_70244775909000'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mNominee Load (0.5ms)[0m  [1m[34mSELECT "nominees".* FROM "nominees"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mAnswer Load (0.6ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "contact@mathilderobert.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "contact@mathilderobert.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "prenom", "nom") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "contact@mathilderobert.com"], ["encrypted_password", "$2a$11$t/VcpetJBwn5.Nlv8jSPN.BZzzjsDNIMXaBW5cgrwsHEH8jlrF3AO"], ["created_at", "2020-04-09 12:04:04.237634"], ["updated_at", "2020-04-09 12:04:04.237634"], ["prenom", "Mathilde"], ["nom", "Robert"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur espoir féminin"], ["created_at", "2020-04-09 12:04:04.243645"], ["updated_at", "2020-04-09 12:04:04.243645"], ["points", 5]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur espoir masculin"], ["created_at", "2020-04-09 12:04:04.247008"], ["updated_at", "2020-04-09 12:04:04.247008"], ["points", 5]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur acteur dans un second rôle"], ["created_at", "2020-04-09 12:04:04.249286"], ["updated_at", "2020-04-09 12:04:04.249286"], ["points", 3]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleurs costumes"], ["created_at", "2020-04-09 12:04:04.251381"], ["updated_at", "2020-04-09 12:04:04.251381"], ["points", 10]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleurs décors"], ["created_at", "2020-04-09 12:04:04.253404"], ["updated_at", "2020-04-09 12:04:04.253404"], ["points", 10]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur animation court métrage"], ["created_at", "2020-04-09 12:04:04.255511"], ["updated_at", "2020-04-09 12:04:04.255511"], ["points", 10]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur animation long métrage"], ["created_at", "2020-04-09 12:04:04.257566"], ["updated_at", "2020-04-09 12:04:04.257566"], ["points", 5]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleure photographie"], ["created_at", "2020-04-09 12:04:04.259570"], ["updated_at", "2020-04-09 12:04:04.259570"], ["points", 10]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleure adaptation"], ["created_at", "2020-04-09 12:04:04.261495"], ["updated_at", "2020-04-09 12:04:04.261495"], ["points", 5]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:81
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur montage"], ["created_at", "2020-04-09 12:04:04.263304"], ["updated_at", "2020-04-09 12:04:04.263304"], ["points", 10]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur son"], ["created_at", "2020-04-09 12:04:04.265015"], ["updated_at", "2020-04-09 12:04:04.265015"], ["points", 10]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:93
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur film de court métrage"], ["created_at", "2020-04-09 12:04:04.266837"], ["updated_at", "2020-04-09 12:04:04.266837"], ["points", 10]]
+  ↳ db/seeds.rb:93
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:93
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleure actrice dans un second rôle"], ["created_at", "2020-04-09 12:04:04.268534"], ["updated_at", "2020-04-09 12:04:04.268534"], ["points", 5]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:105
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur premier film"], ["created_at", "2020-04-09 12:04:04.270268"], ["updated_at", "2020-04-09 12:04:04.270268"], ["points", 5]]
+  ↳ db/seeds.rb:105
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:105
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur film documentaire"], ["created_at", "2020-04-09 12:04:04.271941"], ["updated_at", "2020-04-09 12:04:04.271941"], ["points", 10]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:115
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:115
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleure musique originale"], ["created_at", "2020-04-09 12:04:04.273604"], ["updated_at", "2020-04-09 12:04:04.273604"], ["points", 10]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:121
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:121
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:123
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur scénario original"], ["created_at", "2020-04-09 12:04:04.276953"], ["updated_at", "2020-04-09 12:04:04.276953"], ["points", 3]]
+  ↳ db/seeds.rb:123
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:123
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur film étranger"], ["created_at", "2020-04-09 12:04:04.278921"], ["updated_at", "2020-04-09 12:04:04.278921"], ["points", 5]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:133
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:133
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleure réalisation"], ["created_at", "2020-04-09 12:04:04.281163"], ["updated_at", "2020-04-09 12:04:04.281163"], ["points", 3]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:139
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:139
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:141
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur acteur"], ["created_at", "2020-04-09 12:04:04.284447"], ["updated_at", "2020-04-09 12:04:04.284447"], ["points", 3]]
+  ↳ db/seeds.rb:141
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleure actrice"], ["created_at", "2020-04-09 12:04:04.287163"], ["updated_at", "2020-04-09 12:04:04.287163"], ["points", 3]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:151
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:151
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:153
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur film"], ["created_at", "2020-04-09 12:04:04.290925"], ["updated_at", "2020-04-09 12:04:04.290925"], ["points", 3]]
+  ↳ db/seeds.rb:153
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:153
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:157
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:157
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:159
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at", "points") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Meilleur film du public"], ["created_at", "2020-04-09 12:04:04.293559"], ["updated_at", "2020-04-09 12:04:04.293559"], ["points", 3]]
+  ↳ db/seeds.rb:159
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:159
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:163
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:163
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:166
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:166
+[36m  Cloudinary Storage (171.8ms) [0m[32mUploaded file to key: iHXfEsjTQBNns7Q5qYbGrWDF (checksum: 6NRmDYQJy+y9MDI1Sd7hJw==)[0m

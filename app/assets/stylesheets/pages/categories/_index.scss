@@ -1,0 +1,65 @@
+.main-index {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  overflow-x: none;
+  overflow-y: scroll;
+  background: transparent url(https://res.cloudinary.com/ddlesqeup/image/upload/v1582036447/Listing_cate%CC%81gories_wb9uab.png) no-repeat;
+  background-size: cover;
+}
+
+ul {
+  margin-top: 2rem;
+}
+
+ul > a > li {
+  color: white;
+  opacity: 0.6;
+  list-style-type: none;
+  text-align: center;
+  font-size: 2rem;
+  transition: all 0.45s ease;
+  transform: scale(1);
+  transform-origin: center center;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    font-size: 40px;
+    opacity: 1;
+  }
+}
+
+ul > a:hover {
+  text-decoration: none;
+}
+
+.categories,.index > .navbar-cesars {
+  z-index: 2;
+}
+
+.main-index > .container {
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+}
+
+.main-index > .container > .category-title {
+  text-align: center;
+}
+
+.fa-check {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #FEDE1E;
+}
+
+.index-explain {
+  color: #FEDE1E;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 2rem;
+}

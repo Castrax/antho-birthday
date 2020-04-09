@@ -1,0 +1,28 @@
+.form-devise {
+  color: #FEDE1E;
+}
+
+.btn-cesars {
+  background-color: #FEDE1E;
+  color: #050302;
+  border: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  &:hover {
+    color: #FEDE1E;
+    background-color: #050302;
+    border: 3px solid;
+  }
+}
+
+.lien-connexion a {
+  color: #FEDE1E;
+  text-transform: uppercase;
+}
+
+.lien-connexion {
+  text-align: center;
+  margin-bottom: 5rem;
+}

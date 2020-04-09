@@ -1,0 +1,277 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  grid-gap: 5rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  height: 492px;
+  border-radius: 4px;
+}
+
+.card > img {
+  vertical-align: middle;
+  border-style: none;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-radius: 4px;
+}
+
+.infos-nominee {
+  position: absolute;
+  z-index: 2;
+  bottom: 2.5rem;
+  left: 1rem;
+  width: 90%;
+  margin-left: 1rem;
+  .left-infos {
+    text-transform: uppercase;
+    margin-right: 1rem;
+    color: #050302;
+    .name {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    .real {
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  }
+  .select-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FEDE1E;
+    border-radius: 50%;
+  }
+}
+
+.active {
+  background-color: #FEDE1E;
+}
+
+.card-voted {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: white;
+  position: relative;
+  height: 400px;
+  border-radius: 4px;
+}
+
+.card-voted > img {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-radius: 4px;
+}
+
+.infos-voted {
+  width: 70%;
+  float: right;
+  margin-top: 3rem;
+  .label-infos-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+  .nominee-infos {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    .infos-title-real {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
+
+.infos-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  .change-vote-div {
+    text-align: center;
+    padding: 0.5rem 5rem;
+    width: 100px;
+    background-color: white;
+    position: relative;
+    height: 3rem;
+    border: 1px solid;
+    margin-right: 5rem;
+    .change-vote {
+      padding: 0.7rem 1rem;
+      background-color: #FEDE1E;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      color: #050302;
+      text-transform: uppercase;
+      width: 200px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .next-category {
+    color: #FEDE1E;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+}
+
+.photo-accuse {
+  filter: brightness(0.5);
+}
+
+.accuse:hover .coupontooltip {
+    display: block;
+}
+
+.coupontooltip {
+    display: none;
+    background: white;
+    margin-left: 28px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    width:200px;
+    height:200px;
+    border-radius:4px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.infos-accuse {
+  opacity: 0.5;
+}
+
+.card-voted, .no-vote {
+  height: 250px;
+}
+
+.infos-voted, .no-vote {
+  width: 100%;
+}
+
+.infos-title, .no-vote {
+  text-align: center;
+}
+
+.winner-loser-waiting {
+  margin-top: 10rem;
+}
+
+.top {
+  text-align: right;
+  margin-right: 10rem;
+}
+
+// Petits appareils (mobiles portrait)
+@media (min-width: 320px) and (max-width: 414px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-voted {
+    height: 700px;
+  }
+  .card > img {
+    left: -5px;
+  }
+  .infos-voted {
+    width: 100%;
+    float: right;
+    margin-top: 24rem;
+    .label-infos-title {
+      padding-left: 1rem;
+    }
+    .nominee-infos {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  .infos-buttons {
+    display: block;
+    margin-left: 1rem;
+    .change-vote-div {
+      margin-bottom: 2rem;
+    }
+  }
+  .card-voted, .no-vote {
+    height: 250px;
+    margin-top: 5rem;
+  }
+  .infos-voted, .no-vote {
+    margin-top: 2rem;
+  }
+  .nominee-infos, .no-vote {
+    margin-left: 0 !important;
+  }
+  .label-infos-title, .no-vote {
+    padding-left: 0rem !important;
+  }
+  .top-card {
+    height: 175px;
+    margin-top: 24rem;
+  }
+  .top-card > img {
+    top: -360px;
+    left: 7%;
+  }
+  .infos-top {
+    margin-top: 2rem;
+  }
+  .top {
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+  .winner-loser-waiting {
+    margin-top: 0;
+  }
+}
+
+// Petits appareils (mobiles paysage)
+@media (min-width: 568px) and (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Moyens appareils (tablettes portrait)
+@media (min-width: 768px) and (max-width: 834px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top {
+    text-align: right;
+    margin-right: 3rem;
+  }
+}
+
+// Moyens appareils (tablettes paysage)
+@media (min-width: 835px) and (max-width: 1199px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .top {
+    text-align: right;
+    margin-right: 3rem;
+  }
+}
+
+//Ordinateurs
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
