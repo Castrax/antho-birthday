@@ -1,11 +1,6 @@
 // Specific CSS for your home-page
 .home {
-  background-color: rgb(254, 222, 30);
-}
-
-svg {
-  height: 70vh;
-  flex: 2;
+  background-color: #000000;
 }
 
 .nav-home {
@@ -26,41 +21,24 @@ svg {
   padding: 1.5rem 2rem 1rem 1rem;
 }
 
-.logo-centered {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
+.title-home {
+  color: #FEDE1E;
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: xx-large;
 }
 
-.logo-robix {
-  font-family: $robix-font;
-  display: inline-flex;
-  .x {
-    font-size: 1.5rem;
-    margin: 0 1rem 0 0.8rem ;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
+.antho-picture {
+  background-image: url(https://res.cloudinary.com/ddlesqeup/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1586615829/anthoche-jeune.jpg);
+  width: 600px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
 
-.vote-button {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  .btn-home {
-    color: $cesars-black;
-    padding: 0.3rem 0.4rem;
-    border: 1px solid;
-  }
-  .btn-home:hover {
-    color: $cesars-black;
-    text-decoration: none;
-  }
+.box-picture {
+  padding-top: 2rem;
 }
-
-
