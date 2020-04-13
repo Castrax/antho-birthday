@@ -42,3 +42,25 @@
 .box-picture {
   padding-top: 2rem;
 }
+
+.white-box {
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 130px;
+  right: 400px;
+  border-radius: 0 4px 4px 0;
+  z-index: 1;
+}
+
+.yellow-box {
+  width: 600px;
+  height: 500px;
+  background-color: #FEDE1E;
+  position: absolute;
+  top: 140px;
+  right: 382px;
+  border-radius: 0 4px 4px 0;
+  z-index: 0;
+}
