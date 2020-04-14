@@ -7100,3 +7100,61 @@ Processing by CategoriesController#show as HTML
 Completed 200 OK in 67ms (Views: 51.5ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/" for ::1 at 2020-04-14 09:53:11 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar-cesars-home.html.erb:2
+  Rendered shared/_navbar-cesars-home.html.erb (26.3ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 230ms (Views: 201.2ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/categories/24" for ::1 at 2020-04-14 09:53:15 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:74
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:16
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mAnswer Load (3.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."user_id" = $1 AND "answers"."category_id" = $2[0m  [["user_id", 2], ["category_id", 24]]
+  ↳ app/views/categories/show.html.erb:4
+  Rendered shared/show/_card-no-vote.html.erb (0.6ms)
+  Rendered shared/_modal-validate.html.erb (0.4ms)
+  Rendered categories/show.html.erb within layouts/application (9.1ms)
+  Rendered shared/_navbar-cesars.html.erb (0.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 22.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/categories/24" for ::1 at 2020-04-14 09:54:17 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/mathilderobert/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:74
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:16
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."user_id" = $1 AND "answers"."category_id" = $2[0m  [["user_id", 2], ["category_id", 24]]
+  ↳ app/views/categories/show.html.erb:4
+  Rendered shared/show/_card-no-vote.html.erb (0.3ms)
+  Rendered shared/_modal-validate.html.erb (0.6ms)
+  Rendered categories/show.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar-cesars.html.erb (0.7ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 0.9ms)
+
+

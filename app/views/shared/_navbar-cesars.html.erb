@@ -14,9 +14,6 @@
           <%= link_to 'Résultats', '/pages/resultats', class: 'nav-pages' %>
         </div>
         <div class="Navbar__Link">
-          <%= link_to 'Liste nominations', categories_path, class: 'nav-pages' %>
-        </div>
-        <div class="Navbar__Link">
           <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete, class: 'nav-pages deco-pages'  %>
         </div>
       <% else %>

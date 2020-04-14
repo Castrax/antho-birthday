@@ -26,15 +26,21 @@ puts "Creating the categories..."
 puts "Creating Commune naissance Anthony"
 c1 = Category.create!({
   title: "Dans quelle commune est né Anthony ?",
-  points: 5
+  points: 3
 })
 c1.save!
 puts "Creating Phrase Anthony"
 c2 = Category.create!({
   title: "Quelle est une des phrases qu’Anthony adore prononcer ? ",
-  points: 5
+  points: 3
 })
 c2.save!
+puts "Creating Marques Anthony"
+c3 = Category.create!({
+  title: "Parmi ces marques, laquelle n’a pas été un client d’Anthony ? ",
+  points: 5
+})
+c3.save!
 puts "Categories created !"
 puts "Creating the nominees..."
 n1 = Nominee.create({
@@ -70,37 +76,70 @@ photo_n4 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v15867751
 n4.photo.attach(io: photo_n4, filename: 'photo_n4.jpg', content_type: 'image/jpg')
 n4.save!
 n5 = Nominee.create({
-  name: "Saint-Avold",
-  real: "Moselle"
+  name: "L'amour...",
+  real: "Ca fait souffrir"
 })
-n1.category_id = c1.id
-photo_n1 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586773300/saint-avold_tojnbb.jpg")
-n1.photo.attach(io: photo_n1, filename: 'photo_n1.jpg', content_type: 'image/jpg')
-n1.save!
-n2 = Nominee.create({
-  name: "Paris",
-  real: "Île-De-France"
+n5.category_id = c2.id
+photo_n5 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
+n5.photo.attach(io: photo_n5, filename: 'photo_n5.jpg', content_type: 'image/jpg')
+n5.save!
+n6 = Nominee.create({
+  name: "L'amour...",
+  real: "Ça fait mal"
 })
-n2.category_id = c1.id
-photo_n2 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586775049/paris-2017-home_xpfpkg.jpg")
-n2.photo.attach(io: photo_n2, filename: 'photo_n2.jpg', content_type: 'image/jpg')
-n2.save!
-n3 = Nominee.create({
-  name: "Creutzwald",
-  real: "Moselle"
+n6.category_id = c2.id
+photo_n6 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
+n6.photo.attach(io: photo_n6, filename: 'photo_n6.jpg', content_type: 'image/jpg')
+n6.save!
+n7 = Nominee.create({
+  name: "L'amour...",
+  real: "C'est méchant"
 })
-n3.category_id = c1.id
-photo_n3 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586775129/creutzwald_zglwpp.jpg")
-n3.photo.attach(io: photo_n3, filename: 'photo_n3.jpg', content_type: 'image/jpg')
-n3.save!
-n4 = Nominee.create({
-  name: "Remiremont",
-  real: "Vosges"
+n7.category_id = c2.id
+photo_n7 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
+n7.photo.attach(io: photo_n7, filename: 'photo_n7.jpg', content_type: 'image/jpg')
+n7.save!
+n8 = Nominee.create({
+  name: "L'amour...",
+  real: "C'est d'la merde..."
 })
-n4.category_id = c1.id
-photo_n4 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586775129/remiremont_dpytzn.jpg")
-n4.photo.attach(io: photo_n4, filename: 'photo_n4.jpg', content_type: 'image/jpg')
-n4.save!
+n8.category_id = c2.id
+photo_n8 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
+n8.photo.attach(io: photo_n8, filename: 'photo_n8.jpg', content_type: 'image/jpg')
+n8.save!
+n9 = Nominee.create({
+  name: "Netflix",
+  real: "Toudouuuuuuum"
+})
+n9.category_id = c3.id
+photo_n9 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851745/13502130_10153696123838870_522765110773053650_n-796x796-2_svnvzb.png")
+n9.photo.attach(io: photo_n9, filename: 'photo_n9.jpg', content_type: 'image/png')
+n9.save!
+n10 = Nominee.create({
+  name: "Cartel",
+  real: "Pop culture agency"
+})
+n10.category_id = c3.id
+photo_n10 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851889/cartel_zfeqjp.jpg")
+n10.photo.attach(io: photo_n10, filename: 'photo_n10.jpg', content_type: 'image/jpg')
+n10.save!
+n11 = Nominee.create({
+  name: "We Love Art",
+  real: "Les parents de We Love Green"
+})
+n11.category_id = c3.id
+photo_n11 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851889/logo-wla_stspa3.svg")
+n11.photo.attach(io: photo_n11, filename: 'photo_n11.jpg', content_type: 'image/svg')
+n11.save!
+n12 = Nominee.create({
+  name: "JO 2024",
+  real: "À Paris"
+})
+n12.category_id = c3.id
+photo_n12 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851890/JO-paris_qfy24g.png")
+n12.photo.attach(io: photo_n12, filename: 'photo_n12.jpg', content_type: 'image/png')
+n8.save!
+
 # puts "Creating Meilleur espoir masculin"
 # c2 = Category.create!({
 #   title: "Meilleur espoir masculin",
