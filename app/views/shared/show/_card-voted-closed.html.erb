@@ -5,6 +5,15 @@
       <p class="label-infos-title">Tu as voté pour</p>
       <p class="nominee-infos"><%= Nominee.find(@answer[0].nominee_id).name %> <span class="infos-title-real">- <%= Nominee.find(@answer[0].nominee_id).real %></span></p>
     </div>
+    <div id="progress-bar">
+      <div></div>
+    </div>
+    <div class="flex-center mt-4">
+      <div class="counter">
+        <span><%= @answers_count %></span>
+      </div>
+      <button class="btn btn-outline-secondary">Refresh counter</button>
+    </div>
   </div>
 </div>
 <div class="winner-loser-waiting">

@@ -80,8 +80,6 @@
     font-weight: 600;
   }
   .nominee-infos {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
     text-transform: uppercase;
     .infos-title-real {
       font-size: 0.8rem;
@@ -173,6 +171,42 @@
 .top {
   text-align: right;
   margin-right: 10rem;
+}
+
+#progress-bar {
+  background-color: #ccc;
+  border-radius: 13px;
+  padding: 3px;
+  width: 50%;
+  float: right;
+  margin-right: 10rem;
+  margin-top: 1rem;
+}
+
+#progress-bar>div {
+  background-color: green;
+  width: 0;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.flex-center {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: right;
+}
+
+.counter {
+  width: 56px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  background-color: #7e73ff;
+  margin-right: 2rem;
 }
 
 // Petits appareils (mobiles portrait)

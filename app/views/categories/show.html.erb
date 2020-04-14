@@ -1,8 +1,7 @@
-<div id="curseur" class="infobulle"></div>
 <div class="container">
   <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
   <% if @answer == [] %>
-    <%= render 'shared/show/card-no-vote' %>
+    <%= render 'shared/show/list-nominees' %>
   <% else %>
     <%= render 'shared/show/card-voted-closed' %>
   <% end %>

@@ -113,23 +113,23 @@ n9 = Nominee.create({
 })
 n9.category_id = c3.id
 photo_n9 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851745/13502130_10153696123838870_522765110773053650_n-796x796-2_svnvzb.png")
-n9.photo.attach(io: photo_n9, filename: 'photo_n9.jpg', content_type: 'image/png')
+n9.photo.attach(io: photo_n9, filename: 'photo_n9.png', content_type: 'image/png')
 n9.save!
 n10 = Nominee.create({
   name: "Cartel",
   real: "Pop culture agency"
 })
 n10.category_id = c3.id
-photo_n10 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851889/cartel_zfeqjp.jpg")
-n10.photo.attach(io: photo_n10, filename: 'photo_n10.jpg', content_type: 'image/jpg')
+photo_n10 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586853065/des-nouvelles-de-cartel-1249x545_xswnde.png")
+n10.photo.attach(io: photo_n10, filename: 'photo_n10.png', content_type: 'image/png')
 n10.save!
 n11 = Nominee.create({
   name: "We Love Art",
   real: "Les parents de We Love Green"
 })
 n11.category_id = c3.id
-photo_n11 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851889/logo-wla_stspa3.svg")
-n11.photo.attach(io: photo_n11, filename: 'photo_n11.jpg', content_type: 'image/svg')
+photo_n11 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586853670/XXEtjHiJ_uucndn.png")
+n11.photo.attach(io: photo_n11, filename: 'photo_n11.png', content_type: 'image/png')
 n11.save!
 n12 = Nominee.create({
   name: "JO 2024",
@@ -138,7 +138,7 @@ n12 = Nominee.create({
 n12.category_id = c3.id
 photo_n12 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851890/JO-paris_qfy24g.png")
 n12.photo.attach(io: photo_n12, filename: 'photo_n12.jpg', content_type: 'image/png')
-n8.save!
+n12.save!
 
 # puts "Creating Meilleur espoir masculin"
 # c2 = Category.create!({
