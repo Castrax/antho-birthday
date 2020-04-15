@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-  before_action :set_answers_counter
   skip_after_action :verify_authorized
   skip_after_action :verify_policy_scoped
 
@@ -73,10 +72,6 @@ class CategoriesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_category
       @category = Category.find(params[:id])
-    end
-
-    def set_answers_counter
-      @answers_count = Answer.where(category_id: params[:id]).count
     end
 
     # Only allow a list of trusted parameters through.

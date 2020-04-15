@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="category-title"><%= @answer.category.title %><span class="points-title"> - <%= @answer.category.points %> points</span></h1>
+  <% if @answer == [] %>
+    <%= render 'shared/show/list-nominees' %>
+  <% else %>
+    <%= render 'shared/show/card-voted-closed' %>
+  <% end %>
+</div>
+<%= render 'shared/modal-validate' %>

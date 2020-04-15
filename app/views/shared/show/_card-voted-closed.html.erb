@@ -1,32 +1,32 @@
 <div class="card-voted top-card">
-  <%= cl_image_tag Nominee.find(id=@answer[0].nominee_id).photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
+  <%= cl_image_tag @answer.nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
   <div class="infos-voted infos-top">
     <div class="infos-title top">
       <p class="label-infos-title">Tu as voté pour</p>
-      <p class="nominee-infos"><%= Nominee.find(@answer[0].nominee_id).name %> <span class="infos-title-real">- <%= Nominee.find(@answer[0].nominee_id).real %></span></p>
+      <p class="nominee-infos"><%= @answer.nominee.name %> <span class="infos-title-real">- <%= @answer.nominee.real %></span></p>
     </div>
     <div id="progress-bar">
       <div></div>
     </div>
-    <div class="flex-center mt-4">
+    <div class="flex-center" data-controller="counter">
       <div class="counter">
-        <span><%= @answers_count %></span>
+        <span data-target="counter.count"><%= @answers_count %></span>
       </div>
-      <button class="btn btn-outline-secondary">Refresh counter</button>
+      <button class="btn btn-outline-secondary" data-action="click->counter#refresh">Refresh counter</button>
     </div>
   </div>
 </div>
 <div class="winner-loser-waiting">
-  <% if @answer[0].nominee.winner == true %>
+  <% if @answer.nominee.winner == true %>
     <div class="card-voted status">
       <div class="infos-voted">
         <div class="infos-title bottom">
           <p class="label-infos-title">🎉 Bravo, ton vote est gagnant !</p>
-          <p class="nominee-infos">Tu as gagné <%= @category.points %> points, tu as le droit de donner un gage à la personne de ton choix.</p>
+          <p class="nominee-infos">Tu as gagné <%= @answer.category.points %> points, tu as le droit de donner un gage à la personne de ton choix.</p>
         </div>
       </div>
     </div>
-  <% elsif @answer[0].nominee.winner == false %>
+  <% elsif @answer.nominee.winner == false %>
     <div class="card-voted status">
       <div class="infos-voted">
         <div class="infos-title bottom">
@@ -47,7 +47,7 @@
   <% end %>
 </div>
 <div class="results-category">
-  <p class="title-results-category">Résultats <%= @category.title %></p>
+  <p class="title-results-category">Résultats <%= @answer.category.title %></p>
   <div class="maj-tableau">
 
   </div>
@@ -59,16 +59,16 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.prenom %> <%= user.nom %> </td>
-        <% if user.answers.where(category_id: @category.id)[0] == nil %>
+        <% if @answer.nominee.winner == nil %>
           <td>En attente de la récompense</td>
-        <% elsif user.answers.where(category_id: @category.id)[0].nominee.winner == true %>
+        <% elsif @answer.nominee.winner == true %>
           <% number = @category.points %>
           <td><%= number %> points</td>
-          <% user.answers.where(category_id: @category.id)[0].points_earned = number %>
-        <% elsif user.answers.where(category_id: @category.id)[0].nominee.winner == false %>
+          <% user.answers.where(category_id: @category.id).points_earned = number %>
+        <% elsif @answer.nominee.winner == false %>
           <% number = 0 %>
           <td><%= number %> point</td>
-          <% user.answers.where(category_id: @category.id)[0].update_column(points_earned: number) %>
+          <% @answer.update_column(points_earned: number) %>
         <% else %>
           <td>En attente de la récompense</td>
         <% end %>

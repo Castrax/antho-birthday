@@ -5,3 +5,5 @@ import { sortTable } from '../components/sort-table';
 
 classToggle();
 sortTable();
+
+import "controllers"
