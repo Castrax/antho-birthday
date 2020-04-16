@@ -5,14 +5,14 @@
       <p class="label-infos-title">Tu as voté pour</p>
       <p class="nominee-infos"><%= @answer.nominee.name %> <span class="infos-title-real">- <%= @answer.nominee.real %></span></p>
     </div>
-    <div id="progress-bar">
-      <div></div>
-    </div>
-    <div class="flex-center" data-controller="counter">
+    <div data-controller="counter">
       <div class="counter">
-        <span data-target="counter.count"><%= @answers_count %></span>
+        <div id="progress-bar">
+          <div data-target="counter.count"></div>
+        </div>
+        <div class="percent"></div>
+        <button class="btn-seeresults">Voir la réponse</button>
       </div>
-      <button class="btn btn-outline-secondary" data-action="click->counter#refresh">Refresh counter</button>
     </div>
   </div>
 </div>

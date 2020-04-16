@@ -45,7 +45,8 @@ puts "Categories created !"
 puts "Creating the nominees..."
 n1 = Nominee.create({
   name: "Saint-Avold",
-  real: "Moselle"
+  real: "Moselle",
+  winner: true
 })
 n1.category_id = c1.id
 photo_n1 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586773300/saint-avold_tojnbb.jpg")
@@ -53,7 +54,8 @@ n1.photo.attach(io: photo_n1, filename: 'photo_n1.jpg', content_type: 'image/jpg
 n1.save!
 n2 = Nominee.create({
   name: "Paris",
-  real: "Île-De-France"
+  real: "Île-De-France",
+  winner: false
 })
 n2.category_id = c1.id
 photo_n2 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586775049/paris-2017-home_xpfpkg.jpg")
@@ -61,7 +63,8 @@ n2.photo.attach(io: photo_n2, filename: 'photo_n2.jpg', content_type: 'image/jpg
 n2.save!
 n3 = Nominee.create({
   name: "Creutzwald",
-  real: "Moselle"
+  real: "Moselle",
+  winner: false
 })
 n3.category_id = c1.id
 photo_n3 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586775129/creutzwald_zglwpp.jpg")
@@ -69,7 +72,8 @@ n3.photo.attach(io: photo_n3, filename: 'photo_n3.jpg', content_type: 'image/jpg
 n3.save!
 n4 = Nominee.create({
   name: "Remiremont",
-  real: "Vosges"
+  real: "Vosges",
+  winner: false
 })
 n4.category_id = c1.id
 photo_n4 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586775129/remiremont_dpytzn.jpg")
@@ -77,7 +81,8 @@ n4.photo.attach(io: photo_n4, filename: 'photo_n4.jpg', content_type: 'image/jpg
 n4.save!
 n5 = Nominee.create({
   name: "L'amour...",
-  real: "Ca fait souffrir"
+  real: "Ca fait souffrir",
+  winner: false
 })
 n5.category_id = c2.id
 photo_n5 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
@@ -85,7 +90,8 @@ n5.photo.attach(io: photo_n5, filename: 'photo_n5.jpg', content_type: 'image/jpg
 n5.save!
 n6 = Nominee.create({
   name: "L'amour...",
-  real: "Ça fait mal"
+  real: "Ça fait mal",
+  winner: true
 })
 n6.category_id = c2.id
 photo_n6 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
@@ -93,7 +99,8 @@ n6.photo.attach(io: photo_n6, filename: 'photo_n6.jpg', content_type: 'image/jpg
 n6.save!
 n7 = Nominee.create({
   name: "L'amour...",
-  real: "C'est méchant"
+  real: "C'est méchant",
+  winner: false
 })
 n7.category_id = c2.id
 photo_n7 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
@@ -101,7 +108,9 @@ n7.photo.attach(io: photo_n7, filename: 'photo_n7.jpg', content_type: 'image/jpg
 n7.save!
 n8 = Nominee.create({
   name: "L'amour...",
-  real: "C'est d'la merde..."
+  real: "C'est d'la merde...",
+  winner: false
+
 })
 n8.category_id = c2.id
 photo_n8 = URI.open("https://source.unsplash.com/ka7REB1AJl4/1600x900")
@@ -109,7 +118,8 @@ n8.photo.attach(io: photo_n8, filename: 'photo_n8.jpg', content_type: 'image/jpg
 n8.save!
 n9 = Nominee.create({
   name: "Netflix",
-  real: "Toudouuuuuuum"
+  real: "Toudouuuuuuum",
+  winner: false
 })
 n9.category_id = c3.id
 photo_n9 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851745/13502130_10153696123838870_522765110773053650_n-796x796-2_svnvzb.png")
@@ -117,7 +127,8 @@ n9.photo.attach(io: photo_n9, filename: 'photo_n9.png', content_type: 'image/png
 n9.save!
 n10 = Nominee.create({
   name: "Cartel",
-  real: "Pop culture agency"
+  real: "Pop culture agency",
+  winner: false
 })
 n10.category_id = c3.id
 photo_n10 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586853065/des-nouvelles-de-cartel-1249x545_xswnde.png")
@@ -125,7 +136,8 @@ n10.photo.attach(io: photo_n10, filename: 'photo_n10.png', content_type: 'image/
 n10.save!
 n11 = Nominee.create({
   name: "We Love Art",
-  real: "Les parents de We Love Green"
+  real: "Les parents de We Love Green",
+  winner: false
 })
 n11.category_id = c3.id
 photo_n11 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586853670/XXEtjHiJ_uucndn.png")
@@ -133,7 +145,8 @@ n11.photo.attach(io: photo_n11, filename: 'photo_n11.png', content_type: 'image/
 n11.save!
 n12 = Nominee.create({
   name: "JO 2024",
-  real: "À Paris"
+  real: "À Paris",
+  winner: true
 })
 n12.category_id = c3.id
 photo_n12 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1586851890/JO-paris_qfy24g.png")

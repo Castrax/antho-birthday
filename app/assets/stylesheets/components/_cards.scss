@@ -124,14 +124,6 @@
   }
 }
 
-.photo-accuse {
-  filter: brightness(0.5);
-}
-
-.accuse:hover .coupontooltip {
-    display: block;
-}
-
 .coupontooltip {
     display: none;
     background: white;
@@ -148,14 +140,6 @@
     font-size: 1rem;
 }
 
-.infos-accuse {
-  opacity: 0.5;
-}
-
-.card-voted, .no-vote {
-  height: 250px;
-}
-
 .infos-voted, .no-vote {
   width: 100%;
 }
@@ -164,51 +148,55 @@
   text-align: center;
 }
 
-.winner-loser-waiting {
-  margin-top: 10rem;
-}
-
 .top {
   text-align: right;
   margin-right: 10rem;
 }
 
-#progress-bar {
-  background-color: #ccc;
-  border-radius: 13px;
-  padding: 3px;
-  width: 50%;
-  float: right;
+.counter {
   margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#progress-bar {
+  background-color: #E5E5E5;
+  border-radius: 4px;
+  padding: 3px;
+  width: 55%;
+  float: right;
   margin-top: 1rem;
 }
 
 #progress-bar>div {
-  background-color: green;
+  background-color: $cesars-yellow;
   width: 0;
   height: 20px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
-.flex-center {
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  text-align: right;
-  margin-top: 4rem;
+.percent {
+  float: right;
+  font-size: larger;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  letter-spacing: 3px;
 }
 
-.counter {
-  width: 56px;
-  border-radius: 50%;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  background-color: #7e73ff;
-  margin-right: 2rem;
+.btn-seeresults {
+  margin-top: 5rem;
+  padding: 0.75rem 3.5rem;
+  background-color: #FEDE1E;
+  border: none;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 3px;
 }
+
+.winner-loser-waiting {
+    display: none;
+  }
 
 // Petits appareils (mobiles portrait)
 @media (min-width: 320px) and (max-width: 414px) {
