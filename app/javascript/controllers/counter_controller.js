@@ -13,6 +13,7 @@ export default class extends Controller {
     fetch(`/categories/${idCategory}/answers/`, { headers: { accept: "application/json" } })
       .then(response => response.json())
       .then((data) => {
+        console.log(data);
         const status = (data.length / nbUsers) * 100;
         const progressBar = document.querySelector('#progress-bar').firstElementChild;
         const percentDiv = document.querySelector('.percent');

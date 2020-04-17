@@ -133,7 +133,7 @@
           <% elsif @answer.nominee.winner == true %>
             <% number = @category.points %>
             <td><%= number %> points</td>
-            <% user.answers.where(category_id: @category.id)[0].points_earned = number %>
+            <% @answer.points_earned = number %>
           <% elsif @answer.nominee.winner == false %>
             <% number = 0 %>
             <td><%= number %> point</td>
