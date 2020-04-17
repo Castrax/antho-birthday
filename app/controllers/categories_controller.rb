@@ -15,9 +15,7 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     @nominees = Nominee.where(category_id: params[:id])
-    @answer = @category.answer
-    @answers = Answer.where(category_id: @category.id, user_id: current_user)
-    @users = User.all
+    @answers = Answer.where(category_id: @category, user_id: current_user)
   end
 
   # GET /categories/new

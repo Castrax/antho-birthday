@@ -3,7 +3,9 @@
   <% if @answers == nil || @answers == [] %>
     <%= render 'shared/show/list-nominees' %>
   <% else %>
-    <% controller.redirect_to category_answer_path(@category, @answer) %>
+    <% @answers.each do |answer| %>
+      <% controller.redirect_to category_answer_path(@category, answer) %>
+    <% end %>
   <% end %>
 </div>
 <%= render 'shared/modal-validate' %>
