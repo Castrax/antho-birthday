@@ -1,78 +1,148 @@
-<div class="card-voted top-card">
-  <%= cl_image_tag @answer.nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
-  <div class="infos-voted infos-top">
-    <div class="infos-title top">
-      <p class="label-infos-title">Tu as voté pour</p>
-      <p class="nominee-infos"><%= @answer.nominee.name %> <span class="infos-title-real">- <%= @answer.nominee.real %></span></p>
-    </div>
-    <div data-controller="counter">
-      <div class="counter">
-        <div id="progress-bar">
-          <div data-target="counter.count"></div>
+<% if @answer.category_id == Category.last.id %>
+  <div class="card-voted top-card">
+    <%= cl_image_tag @answer.nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
+    <div class="infos-voted infos-top">
+      <div class="infos-title top">
+        <p class="label-infos-title">Tu as voté pour</p>
+        <p class="nominee-infos"><%= @answer.nominee.name %> <span class="infos-title-real">- <%= @answer.nominee.real %></span></p>
+      </div>
+      <div data-controller="counter">
+        <div class="counter">
+          <div id="progress-bar">
+            <div data-target="counter.count"></div>
+          </div>
+          <div class="percent"></div>
+          <button class="btn-seeresults">Voir la réponse</button>
         </div>
-        <div class="percent"></div>
-        <button class="btn-seeresults">Voir la réponse</button>
       </div>
     </div>
   </div>
-</div>
-<div class="winner-loser-waiting">
-  <% if @answer.nominee.winner == true %>
-    <div class="card-voted status">
-      <div class="infos-voted">
-        <div class="infos-title bottom">
-          <p class="label-infos-title">🎉 Bravo, ton vote est gagnant !</p>
-          <p class="nominee-infos">Tu as gagné <%= @answer.category.points %> points, tu as le droit de donner un gage à la personne de ton choix.</p>
+  <div class="winner-loser-waiting">
+    <% if @answer.nominee.winner == true %>
+      <div class="card-voted status">
+        <div class="infos-voted">
+          <div class="infos-title bottom">
+            <p class="label-infos-title">🎉 Bravo, ton vote est gagnant !</p>
+            <p class="nominee-infos">Tu as gagné <%= @answer.category.points %> points, vole vers la victoire !</p>
+          </div>
+          <div class="next-question">
+            <%= link_to resultats_path(:resultats) do  %>
+              <button class="btn-seeresults nextquestion">Voir le classement final</button>
+            <% end %>
+          </div>
         </div>
       </div>
-    </div>
-  <% elsif @answer.nominee.winner == false %>
-    <div class="card-voted status">
-      <div class="infos-voted">
-        <div class="infos-title bottom">
-          <p class="label-infos-title">😓 Oups, ton vote est perdant !</p>
-          <p class="nominee-infos">Attends-toi à recevoir un gage d'un de tes copains...</p>
+    <% elsif @answer.nominee.winner == false %>
+      <div class="card-voted status">
+        <div class="infos-voted">
+          <div class="infos-title bottom">
+            <p class="label-infos-title">😓 Oups, ton vote est perdant !</p>
+            <p class="nominee-infos">Attends-toi à recevoir un gage d'un de tes copains...</p>
+          </div>
+          <div class="next-question">
+            <%= link_to resultats_path(:resultats) do  %>
+              <button class="btn-seeresults nextquestion">Voir le classement final</button>
+            <% end %>
+          </div>
         </div>
       </div>
-    </div>
-  <% else %>
-    <div class="card-voted status">
-      <div class="infos-voted">
-        <div class="infos-title bottom">
-          <p class="label-infos-title">⏰ En attente des résultats de la cérémonie</p>
-          <p class="nominee-infos">RDV ce soir pour savoir si tu es gagnant ou perdant</p>
+    <% else %>
+      <div class="card-voted status">
+        <div class="infos-voted">
+          <div class="infos-title bottom">
+            <p class="label-infos-title">⏰ En attente des résultats de la cérémonie</p>
+            <p class="nominee-infos">RDV ce soir pour savoir si tu es gagnant ou perdant</p>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
-</div>
-<div class="results-category">
-  <p class="title-results-category">Résultats <%= @answer.category.title %></p>
-  <div class="maj-tableau">
-
-  </div>
-  <table>
-    <tr>
-      <th class="participants">Participants</th>
-      <th class="numeric-sort">Score</th>
-    </tr>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.prenom %> <%= user.nom %> </td>
-        <% if @answer.nominee.winner == nil %>
-          <td>En attente de la récompense</td>
-        <% elsif @answer.nominee.winner == true %>
-          <% number = @category.points %>
-          <td><%= number %> points</td>
-          <% user.answers.where(category_id: @category.id).points_earned = number %>
-        <% elsif @answer.nominee.winner == false %>
-          <% number = 0 %>
-          <td><%= number %> point</td>
-          <% @answer.update_column(points_earned: number) %>
-        <% else %>
-          <td>En attente de la récompense</td>
-        <% end %>
-      </tr>
     <% end %>
-  </table>
-</div>
+  </div>
+<% else %>
+  <div class="card-voted top-card">
+    <%= cl_image_tag @answer.nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
+    <div class="infos-voted infos-top">
+      <div class="infos-title top">
+        <p class="label-infos-title">Tu as voté pour</p>
+        <p class="nominee-infos"><%= @answer.nominee.name %> <span class="infos-title-real">- <%= @answer.nominee.real %></span></p>
+      </div>
+      <div data-controller="counter">
+        <div class="counter">
+          <div id="progress-bar">
+            <div data-target="counter.count"></div>
+          </div>
+          <div class="percent"></div>
+          <button class="btn-seeresults">Voir la réponse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="winner-loser-waiting">
+    <% if @answer.nominee.winner == true %>
+      <div class="card-voted status">
+        <div class="infos-voted">
+          <div class="infos-title bottom">
+            <p class="label-infos-title">🎉 Bravo, ton vote est gagnant !</p>
+            <p class="nominee-infos">Tu as gagné <%= @answer.category.points %> points, vole vers la victoire !</p>
+          </div>
+          <div class="next-question">
+            <%= link_to category_path(@category.id + 1) do  %>
+              <button class="btn-seeresults nextquestion">Répondre à la question suivante</button>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% elsif @answer.nominee.winner == false %>
+      <div class="card-voted status">
+        <div class="infos-voted">
+          <div class="infos-title bottom">
+            <p class="label-infos-title">😓 Oups, ton vote est perdant !</p>
+            <p class="nominee-infos">Attends-toi à recevoir un gage d'un de tes copains...</p>
+          </div>
+          <div class="next-question">
+            <%= link_to category_path(@category.id + 1) do  %>
+              <button class="btn-seeresults nextquestion">Répondre à la question suivante</button>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% else %>
+      <div class="card-voted status">
+        <div class="infos-voted">
+          <div class="infos-title bottom">
+            <p class="label-infos-title">⏰ En attente des résultats de la cérémonie</p>
+            <p class="nominee-infos">RDV ce soir pour savoir si tu es gagnant ou perdant</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="results-category">
+    <p class="title-results-category"> 📊 Résultats <%= @answer.category.title %></p>
+    <div class="maj-tableau">
+    </div>
+    <table>
+      <tr>
+        <th class="participants">Participants</th>
+        <th class="numeric-sort">Score</th>
+      </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.prenom %> <%= user.nom %> </td>
+          <% if @answer.nominee.winner == nil %>
+            <td>En attente de la récompense</td>
+          <% elsif @answer.nominee.winner == true %>
+            <% number = @category.points %>
+            <td><%= number %> points</td>
+            <% user.answers.where(category_id: @category.id)[0].points_earned = number %>
+          <% elsif @answer.nominee.winner == false %>
+            <% number = 0 %>
+            <td><%= number %> point</td>
+            <% @answer.update_column(:points_earned, number) %>
+          <% else %>
+            <td>En attente de la récompense</td>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+<% end %>

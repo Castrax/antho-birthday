@@ -16,7 +16,7 @@ export default class extends Controller {
         const status = (data.length / nbUsers) * 100;
         const progressBar = document.querySelector('#progress-bar').firstElementChild;
         const percentDiv = document.querySelector('.percent');
-        progressBar.setAttribute("style", `width: ${status}px`);
+        progressBar.setAttribute("style", `width: ${status}%`);
         percentDiv.innerHTML = `${Math.round(status)}% ont voté`;
       });
   }

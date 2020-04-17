@@ -3,7 +3,7 @@
   <% if @answer == [] %>
     <%= render 'shared/show/list-nominees' %>
   <% else %>
-    <%= render 'shared/show/card-voted' %>
+    <% controller.redirect_to category_answer_path(@category, @answer)  %>
   <% end %>
 </div>
 <%= render 'shared/modal-validate' %>

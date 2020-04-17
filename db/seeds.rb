@@ -26,7 +26,7 @@ puts "Creating the categories..."
 puts "Creating Commune naissance Anthony"
 c1 = Category.create!({
   title: "Dans quelle commune est né Anthony ?",
-  points: 3
+  points: 5
 })
 c1.save!
 puts "Creating Phrase Anthony"

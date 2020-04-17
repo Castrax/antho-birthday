@@ -148,6 +148,10 @@
   text-align: center;
 }
 
+.status {
+  height: 250px;
+}
+
 .top {
   text-align: right;
   margin-right: 10rem;
@@ -192,6 +196,14 @@
   text-transform: uppercase;
   font-size: small;
   letter-spacing: 3px;
+}
+
+.next-question {
+  text-align: center;
+}
+
+.nextquestion {
+  margin-top: 1rem;
 }
 
 .winner-loser-waiting {
