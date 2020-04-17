@@ -1,6 +1,6 @@
 <div class="container">
   <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
-  <% if @answer == [] || nil %>
+  <% if @answer == nil %>
     <%= render 'shared/show/list-nominees' %>
   <% else %>
     <% controller.redirect_to category_answer_path(@category, @answer) %>
