@@ -1,9 +1,9 @@
 <div class="container">
   <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
-  <% if @answer == [] %>
+  <% if @answer == [] || nil %>
     <%= render 'shared/show/list-nominees' %>
   <% else %>
-    <% controller.redirect_to category_answer_path(@category, @answer)  %>
+    <% controller.redirect_to category_answer_path(@category, @answer) %>
   <% end %>
 </div>
 <%= render 'shared/modal-validate' %>
