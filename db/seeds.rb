@@ -198,7 +198,7 @@ n8 = Nominee.create({
 
 })
 n8.category_id = c2.id
-photo_n8 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1587048796/amour_moche_jitgue.jpg")
+photo_n8 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1587110499/amour-merde_zfo6bh.jpg")
 n8.photo.attach(io: photo_n8, filename: 'photo_n8.jpg', content_type: 'image/jpg')
 n8.save!
 n9 = Nominee.create({
