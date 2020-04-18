@@ -20,11 +20,21 @@ https://res.cloudinary.com/ddlesqeup/image/upload/w_665/v1587233392/nil0wdaajpej
 https://res.cloudinary.com/ddlesqeup/image/upload/w_672/v1587233392/nil0wdaajpejx5zoft8t.png 672w", class: "anthoche") %></picture>
     </div>
   </div>
-  <%= link_to category_path(@category) do  %>
-    <div class="cta-colors">
-      <h2>
-        JOUER
-      </h2>
-    </div>
+  <% if user_signed_in? %>
+    <%= link_to category_path(@category) do  %>
+      <div class="cta-colors">
+        <h2>
+          JOUER
+        </h2>
+      </div>
+    <% end %>
+  <% else %>
+     <%= link_to new_user_registration_path do  %>
+      <div class="cta-colors">
+        <h2>
+          S'INSCRIRE
+        </h2>
+      </div>
+    <% end %>
   <% end %>
 </div>
