@@ -1,8 +1,23 @@
 <div class="container">
   <div class="box-picture">
     <div class="antho-picture">
-     <%= cl_image_tag("logo-anthoche-2_dauvpy", :transformation =>
-    { :dpr => "auto", :responsive => true, :width => "auto", :crop => "scale"}) %>
+     <picture><%= cl_image_tag("https://res.cloudinary.com/ddlesqeup/image/upload/v1587233392/nil0wdaajpejx5zoft8t.png", :sizes => "(max-width: 672px) 100vw, 672px", :srcset => "https://res.cloudinary.com/ddlesqeup/image/upload/w_200/v1587233392/nil0wdaajpejx5zoft8t.png 200w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_246/v1587233392/nil0wdaajpejx5zoft8t.png 246w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_287/v1587233392/nil0wdaajpejx5zoft8t.png 287w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_324/v1587233392/nil0wdaajpejx5zoft8t.png 324w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_359/v1587233392/nil0wdaajpejx5zoft8t.png 359w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_392/v1587233392/nil0wdaajpejx5zoft8t.png 392w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_422/v1587233392/nil0wdaajpejx5zoft8t.png 422w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_455/v1587233392/nil0wdaajpejx5zoft8t.png 455w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_485/v1587233392/nil0wdaajpejx5zoft8t.png 485w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_512/v1587233392/nil0wdaajpejx5zoft8t.png 512w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_538/v1587233392/nil0wdaajpejx5zoft8t.png 538w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_564/v1587233392/nil0wdaajpejx5zoft8t.png 564w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_591/v1587233392/nil0wdaajpejx5zoft8t.png 591w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_616/v1587233392/nil0wdaajpejx5zoft8t.png 616w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_641/v1587233392/nil0wdaajpejx5zoft8t.png 641w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_665/v1587233392/nil0wdaajpejx5zoft8t.png 665w,
+https://res.cloudinary.com/ddlesqeup/image/upload/w_672/v1587233392/nil0wdaajpejx5zoft8t.png 672w", class: "anthoche") %></picture>
     </div>
   </div>
   <%= link_to category_path(@category) do  %>
@@ -13,4 +28,3 @@
     </div>
   <% end %>
 </div>
-

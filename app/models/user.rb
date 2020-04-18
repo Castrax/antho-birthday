@@ -5,6 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :answers
   validates :prenom, presence: true
-  validates :nom, presence: true
-  validates :email, presence: true, uniqueness: true
 end
