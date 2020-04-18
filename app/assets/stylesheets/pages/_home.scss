@@ -31,14 +31,10 @@
 }
 
 .antho-picture {
-  background-image: url(https://res.cloudinary.com/ddlesqeup/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1586615829/anthoche-jeune.jpg);
-  width: 600px;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
   margin: 0 auto;
   z-index: 2;
   position: relative;
+  text-align: center;
 }
 
 .box-picture {
@@ -47,10 +43,10 @@
 
 .white-box {
   width: 600px;
-  height: 500px;
+  height: 450px;
   background-color: white;
   position: absolute;
-  top: 130px;
+  top: 140px;
   right: 397px;
   border-radius: 0 4px 4px 0;
   z-index: 1;
@@ -58,10 +54,10 @@
 
 .yellow-box {
   width: 600px;
-  height: 500px;
+  height: 450px;
   background-color: #FEDE1E;
   position: absolute;
-  top: 140px;
+  top: 160px;
   right: 382px;
   border-radius: 0 4px 4px 0;
   z-index: 0;
@@ -155,8 +151,10 @@
 }
 
 .cta-colors h2 {
-  font-size: 14px;
+  font-size: 1.5rem;
   color: var(--primary);
+  text-align: center;
+  padding-top: 1rem;
 }
 
 a:hover {

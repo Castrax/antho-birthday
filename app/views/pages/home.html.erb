@@ -1,18 +1,16 @@
 <div class="container">
-  <div class="title-home">30 ans Anthoche</div>
   <div class="box-picture">
-    <div class="white-box"></div>
-    <div class="yellow-box"></div>
-    <div class="antho-picture"></div>
+    <div class="antho-picture">
+     <%= cl_image_tag("logo-anthoche-2_dauvpy", :transformation =>
+    { :dpr => "auto", :responsive => true, :width => "auto", :crop => "scale"}) %>
+    </div>
   </div>
   <%= link_to category_path(@category) do  %>
     <div class="cta-colors">
-      <p>
-        JEU 30 ANS ANTHONY
-      </p>
       <h2>
-        CLICK ICI POUR JOUER
+        JOUER
       </h2>
     </div>
   <% end %>
 </div>
+
