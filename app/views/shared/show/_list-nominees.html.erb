@@ -3,7 +3,7 @@
   <% @nominees.each do |nominee| %>
     <%= link_to category_answers_path(:nominee_id => nominee.id, :category_id => @category.id, :user_id => current_user), method: :post, class: "link-nominee" do %>
       <div class="card">
-        <% if nominee.category_id === 108 || nominee.category_id === 116 %>
+        <% if nominee.category_id === 107 || nominee.category_id === 108 || nominee.category_id === 116 %>
            <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :pad, class: 'photo-nominee' %>
         <% else %>
           <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
