@@ -20,7 +20,7 @@
           </tr>
           <% @users.order(stock: :desc).each do |user| %>
             <tr>
-              <td><%= user.prenom %> <%= user.nom %> </td>
+              <td><%= user.prenom %> </td>
                 <% user.stock = @stock %>
                 <% user.save! %>
             <td><%= user.stock %></td>

@@ -127,7 +127,7 @@
       </tr>
       <% @users.each do |user| %>
         <tr>
-          <td><%= user.prenom %> <%= user.nom %> </td>
+          <td><%= user.prenom %> </td>
           <% if @answer.nominee.winner == nil %>
             <td>En attente de la récompense</td>
           <% elsif @answer.nominee.winner == true %>
