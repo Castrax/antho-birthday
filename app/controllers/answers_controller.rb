@@ -7,7 +7,15 @@ class AnswersController < ApplicationController
     @category = Category.find(params[:category_id])
     @nominee = Nominee.find(params[:nominee_id])
     @user = current_user
-    @answer = Answer.new(category_id: @category.id, nominee_id: @nominee.id, user_id: @user.id)
+    if @nominee.winner == true
+      @answer = Answer.new(category_id: @category.id, nominee_id: @nominee.id, user_id: @user.id, points_earned: @category.points)
+      @user.stock += @category.points
+      @user.save!
+    else
+      @answer = Answer.new(category_id: @category.id, nominee_id: @nominee.id, user_id: @user.id, points_earned: 0)
+      @user.stock += 0
+      @user.save!
+    end
     respond_to do |format|
       if @answer.save
         format.html { redirect_to category_answer_path(@category, @answer) }

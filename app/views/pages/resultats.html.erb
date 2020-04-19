@@ -21,9 +21,7 @@
           <% @users.order(stock: :desc).each do |user| %>
             <tr>
               <td><%= user.prenom %> </td>
-                <% user.stock = @stock %>
-                <% user.save! %>
-            <td><%= user.stock %></td>
+              <td><%= user.stock %></td>
           <% end %>
         </table>
       </div>

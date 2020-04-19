@@ -123,23 +123,17 @@
     <table>
       <tr>
         <th class="participants">Participants</th>
-        <th class="numeric-sort">Score</th>
+        <th class="numeric-sort">Score global</th>
+        <th class="global-sort">Score pour la réponse</th>
       </tr>
-      <% @users.each do |user| %>
+      <% @users.order(stock: :desc).each do |user| %>
         <tr>
-          <td><%= user.prenom %> </td>
-          <% if @answer.nominee.winner == nil %>
-            <td>En attente de la récompense</td>
-          <% elsif @answer.nominee.winner == true %>
-            <% number = @category.points %>
-            <td><%= number %> points</td>
-            <% @answer.points_earned = number %>
-          <% elsif @answer.nominee.winner == false %>
-            <% number = 0 %>
-            <td><%= number %> point</td>
-            <% @answer.update_column(:points_earned, number) %>
+          <td><%= user.prenom %></td>
+          <td><%= user.stock %></td>
+          <% if user.answers.where(category_id: @category.id)[0] == nil  %>
+            <td>En attente de la réponse</td>
           <% else %>
-            <td>En attente de la récompense</td>
+            <td><%= user.answers.where(category_id: @category.id)[0].points_earned %> points</td>
           <% end %>
         </tr>
       <% end %>
