@@ -778,7 +778,7 @@ photo_n72 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1587072
 n72.photo.attach(io: photo_n72, filename: 'photo_n72.jpg', content_type: 'image/jpg')
 n72.save!
 n73 = Nominee.create({
-  name: "Restaurateur",
+  name: "Un restaurateur",
   real: "Un petit tartare ?",
   winner: false
 })

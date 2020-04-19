@@ -12,8 +12,6 @@
   <body class="<%= controller_name %> <%= action_name %>">
     <% unless action_name == 'home' %>
       <%= render 'shared/navbar-cesars' %>
-    <% else %>
-      <%= render 'shared/navbar-cesars-home' %>
     <% end %>
     <%= render 'shared/flashes' %>
     <%= yield %>

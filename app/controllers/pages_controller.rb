@@ -9,5 +9,7 @@ class PagesController < ApplicationController
   def resultats
     @users = User.all
     @categories = Category.all
+    @nominees = Nominee.where(winner: true)
+    @stock = Answer.sum("points_earned")
   end
 end

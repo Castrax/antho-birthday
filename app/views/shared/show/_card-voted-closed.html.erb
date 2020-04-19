@@ -12,7 +12,7 @@
             <div data-target="counter.count"></div>
           </div>
           <div class="percent"></div>
-          <button class="btn-seeresults">Voir la réponse</button>
+          <button class="btn-seeresults" disabled>Voir la réponse</button>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
       <div class="card-voted status">
         <div class="infos-voted">
           <div class="infos-title bottom">
-            <p class="label-infos-title">🎉 Bravo, ton vote est gagnant !</p>
+            <p class="label-infos-title">🎉 Bravo, ta réponse est gagnante !</p>
             <p class="nominee-infos">Tu as gagné <%= @answer.category.points %> points, vole vers la victoire !</p>
           </div>
           <div class="next-question">
@@ -36,7 +36,7 @@
       <div class="card-voted status">
         <div class="infos-voted">
           <div class="infos-title bottom">
-            <p class="label-infos-title">😓 Oups, ton vote est perdant !</p>
+            <p class="label-infos-title">😓 Oups, ta réponse est perdante !</p>
             <p class="nominee-infos">Attends-toi à recevoir un gage d'un de tes copains...</p>
           </div>
           <div class="next-question">
@@ -71,7 +71,7 @@
             <div data-target="counter.count"></div>
           </div>
           <div class="percent"></div>
-          <button class="btn-seeresults">Voir la réponse</button>
+          <button class="btn-seeresults" disabled>Voir la réponse</button>
         </div>
       </div>
     </div>

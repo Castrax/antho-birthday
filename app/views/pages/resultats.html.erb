@@ -21,16 +21,6 @@
           <% @users.order(stock: :desc).each do |user| %>
             <tr>
               <td><%= user.prenom %> <%= user.nom %> </td>
-                <% @stock = 0 %>
-                <% @categories.each do |category| %>
-                  <% if user.answers.where(category_id: category.id)[0] == nil %>
-                    <% @stock += 0 %>
-                  <% elsif user.answers.where(category_id: category.id)[0].nominee.winner == false || nil %>
-                    <% @stock += 0 %>
-                  <% elsif user.answers.where(category_id: category.id)[0].nominee.winner %>
-                    <% @stock += category.points %>
-                  <% end %>
-                <% end %>
                 <% user.stock = @stock %>
                 <% user.save! %>
             <td><%= user.stock %></td>
