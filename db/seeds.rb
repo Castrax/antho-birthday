@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Cleaning the DB..."
-Category.destroy_all
-Nominee.destroy_all
 Answer.destroy_all
+Nominee.destroy_all
+Category.destroy_all
 User.destroy_all
 puts "DB cleaned."
 
